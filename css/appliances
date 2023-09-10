@@ -1,0 +1,161 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, button, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, serif; /* Change to Georgia font */
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 10px;
+    font-family: 'Algerian', cursive;
+    color: #333;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: #333;
+}
+
+/* Navigation styles */
+.navbar {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+/* Appliance cards */
+.appliance-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.appliance-item {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px;
+    max-width: 200px;
+}
+
+.appliance-item img {
+    max-width: 100%;
+}
+
+.appliance-item .name {
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.appliance-item .price {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #007bff;
+}
+
+.appliance-item input[type="number"] {
+    width: 60px;
+}
+
+/* Shopping cart and checkout styles */
+.order_details {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.selected-item {
+    margin: 10px 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .navbar {
+        padding: 10px;
+    }
+    .appliance-item {
+        margin: 10px 0;
+    }
+}
+
+/* Add border to the selected appliance tab and order details tab */
+.selected-appliance-tab,
+.order-details-tab {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid #007bff; /* Add border styling */
+}
+
+/* Rest of the styles for selected-appliance-tab and order-details-tab remain the same */
+.selected-appliance-tab h4,
+.order-details-tab h4 {
+    margin-bottom: 10px;
+}
+
+.selected-appliance-tab ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.selected-appliance-tab ul li {
+    margin-bottom: 10px;
+}
+
+.selected-appliance-tab,
+.order-details-tab {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 2.5%;
+    text-align: center;
+}
+
+/* Add this media query for responsive adjustments */
+@media screen and (max-width: 768px) {
+    .selected-appliance-tab,
+    .order-details-tab {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
